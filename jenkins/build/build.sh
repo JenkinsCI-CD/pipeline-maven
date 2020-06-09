@@ -7,5 +7,5 @@ echo "#### Creating image ####"
 echo "########################"
 
 cd jenkins/build/
-pwd
+apk add docker-compose -y
 docker-compose -f docker-compose-build.yml build --no-cache
