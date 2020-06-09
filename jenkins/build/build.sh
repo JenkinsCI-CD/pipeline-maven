@@ -7,4 +7,5 @@ echo "####Building image######"
 echo "########################"
 
 cd jenkins/build/
+pwd
 cd docker-compose -f docker-compose-build.yml build --no-cache
