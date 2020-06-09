@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export REGISTRY="52.188.125.65:5043"
+export IMAGE=$(sed -n '1p' /tmp/.envs)
+export TAG=$(sed -n '2p' /tmp/.envs)
+#export PASS=$(sed -n '3p' /tmp/.envs)
+
+#docker login -u user1 -p $PASS $REGISTRY
+
+cd ~/jenkins/ && docker-compose up -d
