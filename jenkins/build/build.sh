@@ -3,7 +3,7 @@
 cp -f java-app/target/*.jar jenkins/build/
 
 echo "########################"
-echo "####Building image######"
+echo "#### Creating image ####"
 echo "########################"
 
 cd jenkins/build/
