@@ -18,7 +18,7 @@ pipeline{
     }
     stage('Test'){
       steps{
-        sh './jenkins/test/test.sh mvn clean est'
+        sh './jenkins/test/test.sh mvn clean test'
       }
       post {
 	always {
