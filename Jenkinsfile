@@ -21,8 +21,8 @@ pipeline{
         sh './jenkins/test/test.sh mvn test'
       }
       post {
-	always {
-	   junit './java-app/target/surefire-reports/*.xml'
+	success {
+	   junit 'java-app/target/surefire-reports/*.xml'
 	  }
 	}
     }
